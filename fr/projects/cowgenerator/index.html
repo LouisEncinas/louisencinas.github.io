@@ -10,34 +10,55 @@
 <body>
     
     <header>
+
         <div class="header_content">
+
             <div class="header_logo">
                 <img class="header_logo_img" src="../../../img/enciboy.png">
                 <span class="header_logo_title">LOUIS ENCINAS</span>
             </div>
-            <div class="header_navbar">
-                <a class="header_navbar_link" id="header_navbar_link_aboutme" href="../../">
-                    <img src="../../../img/user.png" alt="icone_bonhomme" class="header_navbar_link_img">
-                    <span class="header_navbar_link_span">à propos</span>
-                </a>
-                <a class="header_navbar_link" id="header_navbar_link_projects" href="../">
-                    <img src="../../../img/dir.png" alt="icone_bonhomme" class="header_navbar_link_img">
-                    <span class="header_navbar_link_span">Projets</span>
-                </a>
-                <a class="header_navbar_link" id="header_navbar_link_contact">
-                    <img src="../../../img/paper_plane.png" alt="icone_bonhomme" class="header_navbar_link_img">
-                    <span class="header_navbar_link_span">Contact</span>
-                </a>
+
+            <div id="dev_navbar">
+
+                <div id="dev_navbar_outline"></div>
+
+                <div class="cross" id="navbar_close">
+                    <div class="cross_line1"></div>
+                    <div class="cross_line2"></div>
+                </div>
+
+                <div class="header_navbar">
+                    <a class="header_navbar_link" id="header_navbar_link_aboutme" href="../../">
+                        <img src="../../../img/user.png" alt="icone_bonhomme" class="header_navbar_link_img">
+                        <span class="header_navbar_link_span">à propos</span>
+                    </a>
+                    <a class="header_navbar_link" id="header_navbar_link_projects" href="../">
+                        <img src="../../../img/dir.png" alt="icone_bonhomme" class="header_navbar_link_img">
+                        <span class="header_navbar_link_span">Projets</span>
+                    </a>
+                    <a class="header_navbar_link" id="header_navbar_link_contact">
+                        <img src="../../../img/paper_plane.png" alt="icone_bonhomme" class="header_navbar_link_img">
+                        <span class="header_navbar_link_span">Contact</span>
+                    </a>
+                </div>
+
+                <div class="header_links">
+                    <a class="header_link" href="https://github.com/LouisEncinas" target="_blank">
+                        <img class="header_link_image" src="../../../img/github.png">
+                    </a>
+                    <a class="header_link" href="https://www.linkedin.com/in/louisencinas/" target="_blank">
+                        <img class="header_link_image" src="../../../img/linkedin.png">
+                    </a>
+                </div>
+
             </div>
-            <div class="header_links">
-                <a class="header_link" href="https://github.com/LouisEncinas" target="_blank">
-                    <img class="header_link_image" src="../../../img/github.png">
-                </a>
-                <a class="header_link" href="https://www.linkedin.com/in/louisencinas/" target="_blank">
-                    <img class="header_link_image" src="../../../img/linkedin.png">
-                </a>
+
+            <div class="header_dev_container">
+                <div class="header_dev"></div>
             </div>
+
         </div>
+
     </header>
 
     <div class="page">
@@ -67,9 +88,9 @@
     <div id="modal_contact">
         <div id="modal_content">
             
-            <div id="modal_close">
-                <div id="modal_close_line1"></div>
-                <div id="modal_close_line2"></div>
+            <div class="cross" id="modal_close">
+                <div class="cross_line1"></div>
+                <div class="cross_line2"></div>
             </div>
             
             <div id="modal_my_name">Louis ENCINAS</div>
@@ -87,6 +108,9 @@
             </div>
         </div>
     </div>
+
+    <div id="hide_overlay_modal"></div>
+    <div id="hide_overlay_navbar"></div>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../../../js/script.js"></script>

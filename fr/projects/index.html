@@ -8,59 +8,102 @@
     <title>Louis Encinas</title>
 </head>
 <body>
+
     <header>
+
         <div class="header_content">
+
             <div class="header_logo">
                 <img class="header_logo_img" src="../../img/enciboy.png">
                 <span class="header_logo_title">LOUIS ENCINAS</span>
             </div>
-            <div class="header_navbar">
-                <a class="header_navbar_link" id="header_navbar_link_aboutme" href="../">
-                    <img src="../../img/user.png" alt="icone_bonhomme" class="header_navbar_link_img">
-                    <span class="header_navbar_link_span">à propos</span>
-                </a>
-                <a class="header_navbar_link" id="header_navbar_link_projects" href="./">
-                    <img src="../../img/dir.png" alt="icone_bonhomme" class="header_navbar_link_img">
-                    <span class="header_navbar_link_span">projets</span>
-                </a>
-                <a class="header_navbar_link" id="header_navbar_link_contact">
-                    <img src="../../img/paper_plane.png" alt="icone_bonhomme" class="header_navbar_link_img">
-                    <span class="header_navbar_link_span">Contact</span>
-                </a>
+
+            <div id="dev_navbar">
+
+                <div id="dev_navbar_outline"></div>
+
+                <div class="cross" id="navbar_close">
+                    <div class="cross_line1"></div>
+                    <div class="cross_line2"></div>
+                </div>
+
+                <div class="header_navbar">
+                    <a class="header_navbar_link" id="header_navbar_link_aboutme" href="../">
+                        <img src="../../img/user.png" alt="icone_bonhomme" class="header_navbar_link_img">
+                        <span class="header_navbar_link_span">à propos</span>
+                    </a>
+                    <a class="header_navbar_link" id="header_navbar_link_projects" href="./">
+                        <img src="../../img/dir.png" alt="icone_bonhomme" class="header_navbar_link_img">
+                        <span class="header_navbar_link_span">projets</span>
+                    </a>
+                    <a class="header_navbar_link" id="header_navbar_link_contact">
+                        <img src="../../img/paper_plane.png" alt="icone_bonhomme" class="header_navbar_link_img">
+                        <span class="header_navbar_link_span">Contact</span>
+                    </a>
+                </div>
+
+                <div class="header_links">
+                    <a class="header_link" href="https://github.com/LouisEncinas" target="_blank">
+                        <img class="header_link_image" src="../../img/github.png">
+                    </a>
+                    <a class="header_link" href="https://www.linkedin.com/in/louisencinas/" target="_blank">
+                        <img class="header_link_image" src="../../img/linkedin.png">
+                    </a>
+                </div>
+
             </div>
-            <div class="header_links">
-                <a class="header_link" href="https://github.com/LouisEncinas" target="_blank">
-                    <img class="header_link_image" src="../../img/github.png">
-                </a>
-                <a class="header_link" href="https://www.linkedin.com/in/louisencinas/" target="_blank">
-                    <img class="header_link_image" src="../../img/linkedin.png">
-                </a>
+
+            <div class="header_dev_container">
+                <div class="header_dev"></div>
             </div>
+
         </div>
+
     </header>
+    
     <div class="page">
         <div class="page_content">
             <h1>Mes projets !</h1>
             <div class="projects">
                 <a class="project" href="aubertduval/">
-                    <span class="project_img" style="background-image: url(../../img/aubertduval_thumbnail.jpg);"></span>
-                    <span class="project_overlay"></span>
-                    <span class="project_title">Aubert & Duval</span>
+                    <div class="project_img" style="background-image: url(../../img/aubertduval_thumbnail.jpg);"></div>
+                    <div class="project_overlay">
+                        <div>
+                            <div class="project_info" id="project_title">Aubert & Duval</div>
+                            <div class="project_info" id="project_period">2023</div>
+                        </div>
+                        <div class="project_info" id="project_techno">Python<br/>Power BI</div>
+                    </div>
                 </a>
                 <a class="project" href="tree_master/">
-                    <span class="project_img" style="background-image: url(../../img/maze_thumbnail.png);"></span>
-                    <span class="project_overlay"></span>
-                    <span class="project_title">Maître du tree</span>
+                    <div class="project_img" style="background-image: url(../../img/tree_master.png);"></div>
+                    <div class="project_overlay">
+                        <div>
+                            <div class="project_info" id="project_title">Maître du tree</div>
+                            <div class="project_info" id="project_period">2023</div>
+                        </div>
+                        <div class="project_info" id="project_techno">Unity</div>
+                    </div>
                 </a>
                 <a class="project" href="cowgenerator/">
-                    <span class="project_img" style="background-image: url(../../img/cowgenerator_thumbnail.jpg);"></span>
-                    <span class="project_overlay"></span>
-                    <span class="project_title">Générateur de vache</span>
+                    <div class="project_img" style="background-image: url(../../img/cowgenerator_thumbnail.jpg);"></div>
+                    <div class="project_overlay">
+                        <div>
+                            <div class="project_info" id="project_title">Générateur de vache</div>
+                            <div class="project_info" id="project_period">2022</div>
+                        </div>
+                        <div class="project_info" id="project_techno">MATLAB<br/>Python</div>
+                    </div>
                 </a>
                 <a class="project" href="maze/">
-                    <span class="project_img" style="background-image: url(../../img/maze_thumbnail.png);"></span>
-                    <span class="project_overlay"></span>
-                    <span class="project_title">Labyrinthe</span>
+                    <div class="project_img" style="background-image: url(../../img/maze_thumbnail.png);"></div>
+                    <div class="project_overlay">
+                        <div>
+                            <div class="project_info" id="project_title">Labyrinthe</div>
+                            <div class="project_info" id="project_period">2021</div>
+                        </div>
+                        <div class="project_info" id="project_techno">C<br/>SDL2</div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -85,9 +128,9 @@
     <div id="modal_contact">
         <div id="modal_content">
             
-            <div id="modal_close">
-                <div id="modal_close_line1"></div>
-                <div id="modal_close_line2"></div>
+            <div class="cross" id="modal_close">
+                <div class="cross_line1"></div>
+                <div class="cross_line2"></div>
             </div>
             
             <div id="modal_my_name">Louis ENCINAS</div>
@@ -105,6 +148,9 @@
             </div>
         </div>
     </div>
+
+    <div id="hide_overlay_modal"></div>
+    <div id="hide_overlay_navbar"></div>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../../js/script.js"></script>
