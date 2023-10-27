@@ -1,16 +1,13 @@
 :root {
 
     --col1: #FE5551;
-    --col2: #D2D2D2;
-    --col3: #FFFEDC;
-    --col4: #01C7BE;
-    --col5: #FEEA5C;
+    --col2: #01C7BE;
 
-    --letter_col1: #eeddd5;
-    --letter_col2: #dfbdb4;
+    --letter_col1: white;
+    --letter_col2: var(--col2);
 
-    --letter_width: 350px;
-    --letter_height: 220px;
+    --modal_width: 350px;
+    --modal_height: 220px;
 
     --offset: 220px;
 }
@@ -97,21 +94,7 @@ header {
 .header_navbar_link:hover {
     transform: translateY(-8px);
     cursor: pointer;
-}
 
-#header_navbar_link_aboutme:hover {
-    border: 2px solid var(--col5);
-    box-shadow: 0 8px 0 var(--col5);
-    color: var(--col5);
-}
-
-#header_navbar_link_projects:hover {
-    border: 2px solid var(--col4);
-    box-shadow: 0 8px 0 var(--col4);
-    color: var(--col4);
-}
-
-#header_navbar_link_contact:hover {
     border: 2px solid var(--col2);
     box-shadow: 0 8px 0 var(--col2);
     color: var(--col2);
@@ -221,20 +204,20 @@ header {
     display: none;
 
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
 }
 
 #navbar_close:hover {
-    background: var(--letter_col2);
+    background: black;
 }
 
 #navbar_close:hover .cross_line1, #navbar_close:hover .cross_line2 {
-    background: var(--letter_col1);
+    background: var(--col1);
 }
 
 #navbar_close .cross_line1, #navbar_close .cross_line2 {
-    background: var(--letter_col2);
+    background: black;
 }
 
 .page {
@@ -281,7 +264,7 @@ header {
     align-items: center;
     text-decoration: none;
     color: black;
-    background: var(--col4);
+    background: var(--col2);
     /* border: 1px solid var(--col1); */
     border-radius: 4px;
     box-sizing: border-box;
@@ -304,7 +287,7 @@ header {
 }
 
 .project {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(219, 219, 219);
 
     position: relative;
     float: left;
@@ -333,10 +316,10 @@ header {
 
     border-radius: 5px;
     
-    background-size: 110%;
     background-position: center center;
     background-size: cover;
-    transition: background-size 0.3s;
+    
+    transition: transform .3s;
 }
 
 .project_overlay {
@@ -360,6 +343,8 @@ header {
 
 #project_title {
     font-size: 1.2em;
+
+    white-space: nowrap;
 }
 
 #project_title, #project_period {
@@ -429,7 +414,7 @@ footer {
 .thanks_link {
     text-transform: lowercase;
     text-decoration: none;
-    color: var(--col4);
+    color: var(--col2);
 }
 
 .thanks_link:hover {
@@ -443,12 +428,12 @@ footer {
     /* Mettre la fenêtre modal tout devant */
     z-index: 10;
     
-    width: var(--letter_width);
-    height: var(--letter_height);
+    width: var(--modal_width);
+    height: var(--modal_height);
 
     position: fixed;
     bottom: -100%;
-    left: calc(50% - var(--letter_width)/2);
+    left: calc(50% - var(--modal_width)/2);
 
 
     background: var(--letter_col1);
@@ -705,11 +690,11 @@ footer {
         top: 0;
         right: -100%;
 
-        height: 350px;
+        height: 340px;
 
         background-color: var(--col1);
 
-        padding: 0 25px 0 35px;
+        padding: 0 30px 0 30px;
 
         flex-direction: column;
 
@@ -717,22 +702,9 @@ footer {
 
         transition: right .6s;
     }
-    
-    #dev_navbar_outline {
-        z-index: 5;
-
-        position: absolute;
-        top: -10px;
-        left: 10px;
-        width: 110%;
-        height: calc(100%);
-        border: 2px solid #000;
-        border-radius: 0 0 0 5px;
-        box-sizing: border-box;
-    }
 
     #navbar_close {
-        z-index: 6;
+        z-index: 7;
         display: unset;
     }
 
@@ -765,9 +737,9 @@ footer {
         z-index: 6;
 
         position: absolute;
-        bottom: 20px;
+        bottom: 10px;
 
-        width: 80%;
+        width: 85%;
 
         flex-direction: row;
         margin: 0;
@@ -802,13 +774,21 @@ footer {
     .footer_select_langs {
         margin-top: 20px;
     }
+
+    :root {
+        --modal_width: 300px;
+        --modal_height: 180px;
+    }
+
+    #modal_infos {
+        margin: 25px 0 0 30px;
+    }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 440px) {
 
     .project {
         width: 100%;
-        padding-top: 100%;
+        padding-top: 80%;
     }
-
 }
